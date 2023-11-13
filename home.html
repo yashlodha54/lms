@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .header {
+            background-color: #fff;
+            padding: 20px;
+          
+        }
+
+        .navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+            overflow: hidden;
+            background-color: #0c0b0bf3;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+
+        .navbar li {
+            float: left;
+        }
+
+        .navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover {
+            background-color: #6c1010;
+        }
+
+        .hero {
+            background-image: url("https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-color:red;
+            height: 500px;
+            background-repeat: no-repeat;
+
+  background-size: cover;
+  
+            background-position: center;
+            text-align: center;
+            color: rgb(0, 54, 112);
+            padding: 100px 0;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+        .about {
+            padding: 20px;
+        }
+
+        .about h2 {
+            text-align: center;
+        }
+
+        .about p {
+            text-align: justify;
+        }
+        
+.text{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+          
+          
+        }
+
+        .button:hover {
+            background-color: #2c72b8;
+        }
+        .profile-cards{
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 300px;
+            min-width: 300px;
+            width: 350px;
+            margin: 10px;
+        }
+
+        .profile-image {
+            width: 100%;
+            text-align: center;
+        }
+
+        .profile-image img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-top: 70px; /* Half of the image height to center it */
+            border: 5px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-details {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .profile-details h2 {
+            margin: 10px 0;
+        }
+
+        .profile-details p {
+            color: #666;
+        }
+        .profile-cards{
+            display: flex;
+            margin: 20px;
+   
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <li><a href="/">Home</a></li>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/stationary">Stationary</a></li>
+            <li><a href="/about">About</a></li>
+            <a href="/signup"><button class="button">Sign Up</button></a>
+        </nav>
+    </header>
+
+    <div class="container">
+   
+    <section class="hero" >
+      <div class="dd">
+        <h1 class="text" style="font-family: 'Edu TAS Beginner', cursive;">Study Smart, Study Well
+          <p style="font-family: 'Edu TAS Beginner', cursive;
+          font-family: 'Handlee', cursive;" >Get everything you need to study effectively.</p>
+      
+        </h1>
+        
+      </div>
+     
+    </section>
+  </div>
+    <section class="about">
+        <h2>About Us</h2>
+        <div class="profile-cards">
+          <div class="card">
+              <div class="profile-image">
+                  <img src="https://placekitten.com/300/300" alt="Profile Image">
+              </div>
+              <div class="profile-details">
+                  <h2>John Doe</h2>
+                  <p>Web Developer</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et ipsum quis justo pharetra iaculis.</p>
+              </div>
+          </div>
+          <div class="card">
+              <div class="profile-image">
+                  <img src="https://placekitten.com/300/300" alt="Profile Image">
+              </div>
+              <div class="profile-details">
+                  <h2>John Doe</h2>
+                  <p>Web Developer</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et ipsum quis justo pharetra iaculis.</p>
+              </div>
+          </div>
+          <div class="card">
+              <div class="profile-image">
+                  <img src="https://placekitten.com/300/300" alt="Profile Image">
+              </div>
+              <div class="profile-details">
+                  <h2>John Doe</h2>
+                  <p>Web Developer</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et ipsum quis justo pharetra iaculis.</p>
+              </div>
+          </div>
+          <div class="card">
+              <div class="profile-image">
+                  <img src="https://placekitten.com/300/300" alt="Profile Image">
+              </div>
+              <div class="profile-details">
+                  <h2>John Doe</h2>
+                  <p>Web Developer</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et ipsum quis justo pharetra iaculis.</p>
+              </div>
+          </div>
+         
+          </div>
+      </div>
+      <div class="aboutus"></div>
+        <p style="font-family: 'Edu TAS Beginner', cursive;
+font-family: 'Handlee', cursive;" >We are a company that provides students with the resources they need to succeed. We offer a wide variety of products and services, including textbooks, stationery, and tutoring.</p>
+        <p style=" font-family: 'Edu TAS Beginner', cursive;
+        font-family: 'Handlee', cursive;">We are committed to helping students achieve their academic goals. We believe that everyone has the potential to succeed, and we are here to help you reach your full potential.</p>
+        <div class="copyright " style="font-family: 'Edu TAS Beginner', cursive;
+        font-family: 'Handlee', cursive;
+        font-family: 'PT Serif', serif;">
+          © 2023 LMS. All Rights Reserved.
+        </div>
+        
+    </section>
+</body>
+</html>
