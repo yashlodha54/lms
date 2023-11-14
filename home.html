@@ -26,6 +26,8 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            display: flex;
+            justify-content: space-between;
 
         }
 
@@ -69,14 +71,17 @@
 
         .about {
             padding: 20px;
+            background-color:#007bff;
         }
 
         .about h2 {
             text-align: center;
+        
         }
 
         .about p {
             text-align: justify;
+            
         }
         
 .text{
@@ -111,18 +116,21 @@
         }
         .profile-cards{
     display: flex;
+    justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+
 }
         .card {
             background-color: #fff;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(65, 31, 31, 0.1);
             overflow: hidden;
             max-width: 300px;
             min-width: 300px;
             width: 350px;
             margin: 10px;
+           
         }
 
         .profile-image {
@@ -157,6 +165,14 @@
             margin: 20px;
    
         }
+        .aboutus{
+            background-color:black;
+            color:white;
+            padding:30px;
+            border: 2px dotted white;
+            border-radius:20px;
+        
+        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -166,11 +182,15 @@
 <body>
     <header class="header">
         <nav class="navbar">
+           <div>
             <li><a href="/">Home</a></li>
             <li><a href="/dashboard">Dashboard</a></li>
             <li><a href="/stationary">Stationary</a></li>
-            <li><a href="/about">About</a></li>
+            <li><a href="#about">About</a></li>
+           </div>
+           <div>
             <a href="/signup"><button class="button">Sign Up</button></a>
+           </div>
         </nav>
     </header>
 
@@ -234,7 +254,7 @@
          
           </div>
       </div>
-      <div class="aboutus"></div>
+      <div class="aboutus" name="About">
         <p style="font-family: 'Edu TAS Beginner', cursive;
 font-family: 'Handlee', cursive;" >We are a company that provides students with the resources they need to succeed. We offer a wide variety of products and services, including textbooks, stationery, and tutoring.</p>
         <p style=" font-family: 'Edu TAS Beginner', cursive;
@@ -244,7 +264,7 @@ font-family: 'Handlee', cursive;" >We are a company that provides students with 
         font-family: 'PT Serif', serif;">
           © 2023 LMS. All Rights Reserved.
         </div>
-        
+        </div>
     </section>
 </body>
 </html>
